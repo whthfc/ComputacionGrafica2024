@@ -7,19 +7,17 @@ body {
     background-color: #1a153b;
 
 }
-.myText {
-  background-color: #594867;
-}
 
-#myImageSVG {
-  background-color: aqua;
-}
 h1{
     font-size: 2.5rem;
     text-align: center;
     color: #a398c8;
 }
-
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #a398c8;
+}
 img {
     max-width: 200px;
     border-radius: 60%;
@@ -41,7 +39,7 @@ img {
   a{
     text-decoration: none; 
   }
-button{
+  .boton{
     width: 250px;
     padding: 5px;
     border-radius: 20px;
