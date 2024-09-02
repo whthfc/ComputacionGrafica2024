@@ -1,3 +1,8 @@
+<!--
+    Author(a): Santiago Ramirez Posso
+    Date of the creation: 29/08/2024
+    Last Modification: 01/09/2024 | 21:08
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,7 +91,7 @@
                                 <span>)</span>
                                 <br><br>
                                 <div class="d-grid gap-2">
-                                    <button onclick="vector()" type="button" class="btn btn-primary">Calcular</button>
+                                    <button onclick="vectorCalculo()" type="button" class="btn btn-primary">Calcular</button>
                                 </div>
                                 <br>
                                 <span id="result">Resultado...</span>
@@ -99,6 +104,32 @@
                             Suma De Vectores
                         </div>
                         <div class="card-body">
+                            <form action=""> <!-- Punto Final - Punto Inicial = Vector -->
+                                <label class="form-label" for="">Vector 1</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="Vector1X" id="Vector1X" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="Vector1Y" id="Vector1Y" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="Vector1Z" id="Vector1Z" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                    
+                                <label class="form-label" for="">Vector 2</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="Vector2X" id="Vector2X" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="Vector2Y" id="Vector2Y" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="Vector2Z" id="Vector2Z" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                                <div class="d-grid gap-2">
+                                    <button onclick="vectorSuma()" type="button" class="btn btn-primary">Calcular</button>
+                                </div>
+                                <br>
+                                <span id="resultSuma">Resultado...</span>
+                            </form>
                         </div>
                     </div>
                     <br>
@@ -107,6 +138,32 @@
                             Producto Escalar
                         </div>
                         <div class="card-body">
+                            <form action=""> <!-- Punto Final - Punto Inicial = Vector -->
+                                <label class="form-label" for="">Vector 1</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="VectorX1" id="VectorX1" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="VectorY1" id="VectorY1" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="VectorZ1" id="VectorZ1" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                    
+                                <label class="form-label" for="">Vector 2</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="VectorX2" id="VectorX2" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="VectorY2" id="VectorY2" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="VectorZ2" id="VectorZ2" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                                <div class="d-grid gap-2">
+                                    <button onclick="vectorProducto()" type="button" class="btn btn-primary">Calcular</button>
+                                </div>
+                                <br>
+                                <span id="resultProducto">Resultado...</span>
+                            </form>
                         </div>
                     </div>
                     <br>
@@ -115,6 +172,33 @@
                             Magnitud Vector
                         </div>
                         <div class="card-body">
+                            <form action=""> 
+                                <label class="form-label" for="">Vector 1</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="V1X" id="V1X" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="V1Y" id="V1Y" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="V1Z" id="V1Z" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                    
+                                <label class="form-label" for="">Vector 2</label>
+                                <span>(</span>
+                                    <input style="width: 10%;" type="number" name="V2X" id="V2X" placeholder="X">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="V2Y" id="V2Y" placeholder="Y">
+                                <span>,</span>
+                                    <input style="width: 10%;" type="number" name="V2Z" id="V2Z" placeholder="Z">
+                                <span>)</span>
+                                <br><br>
+                                <div class="d-grid gap-2">
+                                    <button onclick="vectorMagnitud()" type="button" class="btn btn-primary">Calcular</button>
+                                </div>
+                                <br>
+                                <span id="resultMagnitud1">Resultado...</span><br>
+                                <span id="resultMagnitud2">Resultado...</span>
+                            </form>
                         </div>
                     </div>
 
