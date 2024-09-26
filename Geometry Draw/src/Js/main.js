@@ -34,6 +34,9 @@ function startScene() {
 
     // Luz - Light
     // Ambient Light
+
+    
+
     const light = new THREE.AmbientLight( 0xffffff ); // soft white light
     scene.add( light );
 
@@ -134,14 +137,26 @@ function createGeometry(geometryDraw) {
           break;
     }
     var randomColor = +('0x' + Math.floor(Math.random()*16777215).toString(16));
-    const material = new THREE.MeshStandardMaterial( { color: randomColor,
+    const materialBasic = new THREE.MeshBasicMaterial( { color: randomColor,
+      transparent: true,
+      opacity: 1,
+      wireframe: true,
+      wireframeLineWidth:6 
+    } );
+    const materialStandard = new THREE.MeshStandardMaterial( { color: randomColor,
                                                     transparent: false,
                                                     opacity: 0.5,
                                                     wireframe: false,
                                                     roughness: 0.5,
                                                     metalness: 1
      } );
-    const objectDraw = new THREE.Mesh( geometryFigure, material );
+     const materialNormal= new THREE.MeshNormalMaterial( { color: randomColor,
+      transparent: false,
+      opacity: 0.5,
+      wireframe: false,
+
+    } );
+    const objectDraw = new THREE.Mesh( geometryFigure, materialNormal );
     scene.add( objectDraw );
 }
 
